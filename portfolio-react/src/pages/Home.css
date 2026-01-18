@@ -1,0 +1,65 @@
+/* profile */
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  padding-top: 100px;
+  margin: 3rem;
+  gap: 4rem;
+  height: 70vh;
+  font-size: 3rem;
+}
+.profile-text {
+  margin-left: 2rem;
+  align-self: center;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.job-title {
+  color: #1055c9;
+  justify-content: center;
+}
+.skill-stack {
+  display: flex;
+  font-size: small;
+  color: gray;
+  justify-content: left;
+}
+.profile-img {
+  align-self: center;
+  margin-right: 4rem;
+}
+.link-card-group {
+  margin-top: 20px;
+  width: 210px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-nav {
+    display: inline-flex;
+  }
+  .nav-top-bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f8fafc;
+    border-top: 1px solid #e5e7eb;
+    padding: 12px 10px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-text {
+    margin-left: 3rem;
+    font-weight: 500;
+    font-size: 5rem;
+  }
+}

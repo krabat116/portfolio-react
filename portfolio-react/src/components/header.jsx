@@ -19,7 +19,7 @@ export default function Header() {
           </li>
           <li>ABOUT</li>
           <li>
-            <Link to="/projects">PROJECT</Link>
+            <Link to="/projects">PROJECTS</Link>
           </li>
           <li>CONTACT</li>
         </nav>
