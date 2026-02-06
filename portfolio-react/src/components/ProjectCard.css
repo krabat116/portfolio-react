@@ -10,14 +10,17 @@
 }
 
 .project-media {
-  height: 280px; /* 카드의 상단(대략 55~60%) */
+  width: 100%;
+  aspect-ratio: 9/16; /* 세로 앱 비율 */
+  max-height: 420px; /* 너무 커지는 것 방지 */
+  overflow: hidden;
   background: #f3f4f6;
 }
 
 .project-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 

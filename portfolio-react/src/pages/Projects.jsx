@@ -18,7 +18,7 @@ const PROJECTS = [
       'D1',
       'R2',
     ],
-    videoSrc: '', // 예: import demo1 from '../assets/demo1.mp4'
+    videoSrc: '/videos/memory-sharing-demo.mp4', // 예: import demo1 from '../assets/demo1.mp4'
     poster: '',
     links: { demo: '', github: '' },
   },
@@ -29,6 +29,7 @@ export default function Projects() {
       <Header></Header>
       <div className="projects-container">
         <h1>My Projects</h1>
+
         <div className="projects-grid">
           {PROJECTS.map((p) => (
             <ProjectCard key={`${p.title}-${p.year}`} {...p} />

@@ -21,6 +21,7 @@ export default function ProjectCard({
             poster={poster}
             controls
             preload="metadata"
+            playsInline
           />
         ) : (
           <div className="project-media-placeholder">Video</div>

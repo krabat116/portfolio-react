@@ -17,11 +17,16 @@ export default function Header() {
           <li className="nav-top-bar-list">
             <Link to="/">HOME</Link>
           </li>
-          <li>ABOUT</li>
+          <li>
+            {' '}
+            <Link to="/about">ABOUT</Link>
+          </li>
           <li>
             <Link to="/projects">PROJECTS</Link>
           </li>
-          <li>CONTACT</li>
+          <li>
+            <Link to="/contact">CONTACT</Link>
+          </li>
         </nav>
         <nav className="hamburger-nav">
           <div className="hamburger-menu">
@@ -39,7 +44,7 @@ export default function Header() {
                   <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <Link to="/">ABOUT</Link>
+                  <Link to="/about">ABOUT</Link>
                 </li>
                 <li>
                   <Link to="/projects">PROJECT</Link>

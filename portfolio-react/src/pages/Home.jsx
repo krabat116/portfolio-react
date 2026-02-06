@@ -26,11 +26,15 @@ export default function Home() {
             <LinkCard
               title={'Download Resume'}
               symbol={<DownloadIcon />}
-            ></LinkCard>
+              href="/resume/Jay_Jung_Resume.pdf"
+              download
+            />
+
             <LinkCard
               title={'View My Projects'}
               symbol={<ArrowIcon />}
-            ></LinkCard>
+              to="/projects"
+            />
           </div>
         </div>
       </section>
