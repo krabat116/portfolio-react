@@ -1,2 +1,2 @@
 ## Live Demo
-🔗 https://your-vercel-url.vercel.app
+🔗 https://portfolio-react-one-virid.vercel.app/
