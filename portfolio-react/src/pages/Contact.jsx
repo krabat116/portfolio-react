@@ -52,73 +52,67 @@ export default function Contact() {
 
         <section className="grid grid-cols-1 gap-6 md:grid-cols-[2fr_3fr] items-start">
           {/* Left: Contact info */}
+          <div className="rounded-2xl border border-black/15 bg-white p-6 shadow-sm">
+            <div className="mb-5 flex items-center gap-3">
+              <div className="grid h-9 w-9 place-items-center rounded-xl bg-black/5 text-lg">
+                📬
+              </div>
+              <h2 className="text-lg font-semibold">Contact Info</h2>
+            </div>
 
-          <div className="self-start pt-0 pr-2 max-w-xs text-[13px] text-black/80">
-            {/* <h2 className="mb-3 text-lg font-semibold">Contact</h2> */}
-
-            <div className="space-y-0 text-sm text-black/80">
-              <div className="leading-tight">
-                <p className="font-medium text-black/90 ">
-                  {' '}
-                  <span className="mt-0.5"></span> Location
-                </p>
-                <p className="text-black/70">Melbourne, Australia</p>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-medium text-black/90">Location</p>
+                <p className="mt-0.5 text-black/60">Melbourne, Australia</p>
               </div>
 
-              <div className="leading-tight">
-                <p className="font-medium text-black/90 mt-3"> Phone</p>
-                <p> 0491 891 782</p>
-                {/* <a
-                    href="tel:0491891782"
-                    className="text-black/70 underline decoration-black/20 underline-offset-4 hover:text-black"
-                  > */}
+              <div className="h-px w-full bg-black/10" />
 
-                {/* </a> */}
+              <div>
+                <p className="font-medium text-black/90">Phone</p>
+                <p className="mt-0.5 text-black/60">0491 891 782</p>
               </div>
 
-              <div className="leading-tight">
-                <p className="font-medium text-black/90 mt-3"> Email</p>
+              <div className="h-px w-full bg-black/10" />
+
+              <div>
+                <p className="font-medium text-black/90">Email</p>
                 <a
                   href="mailto:krabat116@gmail.com"
-                  className="text-black/70 underline decoration-black/20 underline-offset-4 hover:text-black"
+                  className="mt-0.5 block text-black/60 underline decoration-black/20 underline-offset-4 hover:text-black"
                 >
                   krabat116@gmail.com
                 </a>
               </div>
 
-              <div className="leading-tight">
-                <p className="font-medium text-black/90 mt-3">
-                  <span className="mt-0.5 ">Linkedin</span>
-                </p>
+              <div className="h-px w-full bg-black/10" />
+
+              <div>
+                <p className="font-medium text-black/90">LinkedIn</p>
                 <a
                   href="https://linkedin.com/in/younghoon-jung-314662315"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-black/70 underline decoration-black/20 underline-offset-4 hover:text-black break-all "
+                  className="mt-0.5 block break-all text-black/60 underline decoration-black/20 underline-offset-4 hover:text-black"
                 >
                   linkedin.com/in/younghoon-jung-314662315
                 </a>
               </div>
 
-              <div className="leading-tight">
-                <p className="font-medium text-black/90  mt-3">
-                  <span className="mt-0.5">Github</span>
-                </p>
+              <div className="h-px w-full bg-black/10" />
+
+              <div>
+                <p className="font-medium text-black/90">GitHub</p>
                 <a
                   href="https://github.com/krabat116"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-black/70 underline decoration-black/20 underline-offset-4 hover:text-black break-all"
+                  className="mt-0.5 block break-all text-black/60 underline decoration-black/20 underline-offset-4 hover:text-black"
                 >
                   github.com/krabat116
                 </a>
               </div>
             </div>
-
-            <p className="mt-4 max-w-xs text-xs text-black/60">
-              Tip: The form on the right opens your email app with a pre-filled
-              message.
-            </p>
           </div>
 
           {/* Right: Message form */}
