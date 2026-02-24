@@ -9,6 +9,23 @@
   flex-direction: column;
 }
 
+.project-card--clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card--clickable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.13);
+}
+
+.project-card-hint {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0;
+  text-align: right;
+}
+
 .project-media {
   width: 100%;
   aspect-ratio: 9/16; /* 세로 앱 비율 */

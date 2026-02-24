@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header'
 import ProjectCard from '../components/ProjectCard'
+import ProjectModal from '../components/ProjectModal'
 
 const PROJECTS = [
   {
@@ -24,6 +25,8 @@ const PROJECTS = [
   },
 ]
 export default function Projects() {
+  const [selected, setSelected] = useState(null)
+
   return (
     <>
       <Header></Header>
@@ -32,10 +35,18 @@ export default function Projects() {
 
         <div className="projects-grid">
           {PROJECTS.map((p) => (
-            <ProjectCard key={`${p.title}-${p.year}`} {...p} />
+            <ProjectCard
+              key={`${p.title}-${p.year}`}
+              {...p}
+              onClick={() => setSelected(p)}
+            />
           ))}
         </div>
       </div>
+
+      {selected && (
+        <ProjectModal project={selected} onClose={() => setSelected(null)} />
+      )}
     </>
   )
 }

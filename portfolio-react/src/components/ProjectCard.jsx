@@ -10,9 +10,16 @@ export default function ProjectCard({
   videoSrc, // 로컬 mp4 import해서 넘겨도 됨
   poster, // 영상 포스터 이미지(선택)
   links, // { demo?: string, github?: string }
+  onClick,
 }) {
   return (
-    <article className="project-card">
+    <article
+      className="project-card project-card--clickable"
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === 'Enter' && onClick?.()}
+    >
       <div className="project-media">
         {videoSrc ? (
           <video
@@ -50,8 +57,10 @@ export default function ProjectCard({
           ) : null}
         </div>
 
+        <p className="project-card-hint">View details</p>
+
         {links?.demo || links?.github ? (
-          <div className="project-actions">
+          <div className="project-actions" onClick={(e) => e.stopPropagation()}>
             {links?.demo ? (
               <a
                 className="project-btn"
